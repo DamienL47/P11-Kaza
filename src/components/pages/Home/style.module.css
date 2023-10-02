@@ -1,0 +1,9 @@
+.containerLocation {
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    margin: 20px 50px;
+    border-radius: 25px;
+}
