@@ -3,8 +3,9 @@ import { Header } from "./Header/Header";
 import { Banner } from "./Main/Banner/Banner";
 import logo from "../../../assets/images/logo.png";
 import { Location } from "./Main/Location/Location";
-import { AccomodationsAPI } from "../../../api/accomodations";
 import data from "../../../data/logements.json";
+import { Footer } from "./Footer/Footer";
+import banner from "../../../assets/images/Image_source_1.png";
 
 export function Home() {
   const selected = data.slice(0, 6);
@@ -12,7 +13,7 @@ export function Home() {
     <>
       <Header image={logo} />
       <main>
-        <Banner />
+        <Banner image={banner} text={"Chez vous, partout et ailleurs"} />
         <div className={s.containerLocation}>
           {selected.map((accomodation) => {
             return (
@@ -25,6 +26,7 @@ export function Home() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

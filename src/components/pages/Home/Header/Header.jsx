@@ -1,11 +1,12 @@
 import s from "./style.module.css";
+import logo from "../../../../assets/images/logo.png";
 
-export function Header({ image }) {
+export function Header() {
   return (
     <header className={s.header}>
       <div className={s.container}>
         <div className={s.logo}>
-          <img src={image} alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <nav>
           <ul className={s.menu}>
