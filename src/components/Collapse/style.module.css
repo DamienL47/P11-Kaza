@@ -1,0 +1,67 @@
+.panel {
+    width: 70%;
+    height: 50px;
+    position: relative;
+    background-color: #FF6060;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* .button {
+   width: 24px; 
+   font-size: 30px;
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translate(0, -50%);
+   color: white;
+   cursor: pointer;
+} */
+
+.buttonUp {
+    width: 24px; 
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease-out;
+    color: white;
+    cursor: pointer;
+ }
+ .buttonDown {
+    width: 24px; 
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-out;
+    color: white;
+    cursor: pointer;
+ }
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 0 10px 20px;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+    padding: 10px 0 10px 0;
+    border-radius: 0 0 5px 5px;
+}
+.contentText {
+    width: 95%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF6060;
+    padding: 10px 0 10px 20px;
+}
+
