@@ -21,6 +21,7 @@ export function Home() {
                 key={accomodation.id}
                 image={accomodation.cover}
                 title={accomodation.title}
+                id={accomodation.id}
               />
             );
           })}
