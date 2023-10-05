@@ -37,11 +37,11 @@ export function About() {
     <>
       <Header />
       <Banner image={banner} />
-      {aboutData.map((data) => {
-        return (
-          <Collapse key={data.id} title={data.title} content={data.content} />
-        );
-      })}
+      {aboutData.map((data) => (
+        <Collapse key={data.id} title={data.title}>
+          {data.content}
+        </Collapse>
+      ))}
       <Footer />
     </>
   );

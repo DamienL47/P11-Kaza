@@ -1,8 +1,8 @@
 import s from "./style.module.css";
 import { useState } from "react";
-import { ChevronUp, ChevronDown } from "react-bootstrap-icons";
+import { ChevronUp } from "react-bootstrap-icons";
 
-export function Collapse({ title, content }) {
+export function Collapse({ title, children, className }) {
   const [isActive, setIsActive] = useState(false);
 
   const handleCollapse = () => {
@@ -11,15 +11,15 @@ export function Collapse({ title, content }) {
 
   return (
     <>
-      <section className={s.panel}>
+      <section className={s.panel} style={className}>
         <h3 className={s.title} onClick={() => handleCollapse()}>
           {title}
         </h3>
         <ChevronUp className={isActive ? s.buttonUp : s.buttonDown} />
       </section>
       {isActive ? (
-        <div className={s.content}>
-          <div className={s.contentText}>{content}</div>
+        <div className={s.content} style={className}>
+          <div className={s.contentText}>{children}</div>
         </div>
       ) : (
         false

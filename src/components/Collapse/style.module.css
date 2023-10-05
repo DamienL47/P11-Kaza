@@ -7,17 +7,6 @@
     margin: auto;
 }
 
-/* .button {
-   width: 24px; 
-   font-size: 30px;
-   position: absolute;
-   top: 50%;
-   right: 20px;
-   transform: translate(0, -50%);
-   color: white;
-   cursor: pointer;
-} */
-
 .buttonUp {
     width: 24px; 
     font-size: 30px;

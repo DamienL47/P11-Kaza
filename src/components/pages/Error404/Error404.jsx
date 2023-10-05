@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "../Home/Header/Header";
 import { Footer } from "../Home/Footer/Footer";
 import s from "./style.module.css";
+import { Link } from "react-router-dom";
 
 export function Error404() {
   return (
@@ -10,9 +11,9 @@ export function Error404() {
       <div>
         <h1 className={s.title}>404</h1>
         <p className={s.text}>Oups! La page que vous demandez n'existe pas.</p>
-        <a className={s.link} href="/">
+        <Link to="/" className={s.link}>
           Retourner sur la page d'accueil
-        </a>
+        </Link>
       </div>
       <Footer />
     </>

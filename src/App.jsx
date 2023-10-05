@@ -6,19 +6,19 @@ import { PageLocation } from "./components/pages/PageLocation/PageLocation";
 import data from "./data/logements.json";
 
 export function App() {
-  data.map((accomodation) => {
-    return (
-      <Routes>
-        <Route path="/location" element={<PageLocation />} />
-      </Routes>
-    );
-  });
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error404 />} />
         <Route path="/about" element={<About />} />
+        {data.map((accommodation) => (
+          <Route
+            key={accommodation.id}
+            path="/location/:id"
+            element={<PageLocation />}
+          />
+        ))}
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   );
