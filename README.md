@@ -8,8 +8,9 @@
 ● React Router  
 ● Styling: L’utilisation de Sass est optionnelle. CSS est à utiliser par
 défaut.  
-● Pas de librairie React externe  
-⚙️ Contraintes techniques
+● Pas de librairie React externe
+
+## ⚙️ Contraintes techniques
 
 ### React :
 
