@@ -4,11 +4,11 @@
 
 ### 🛠 Outils standards
 
-● Create React App
-● React Router
+● Create React App  
+● React Router  
 ● Styling: L’utilisation de Sass est optionnelle. CSS est à utiliser par
-défaut.
-● Pas de librairie React externe
+défaut.  
+● Pas de librairie React externe  
 ⚙️ Contraintes techniques
 
 ### React :
