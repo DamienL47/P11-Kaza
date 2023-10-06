@@ -54,3 +54,30 @@
     padding: 10px 0 10px 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .panel {
+        width: 90%;
+        height: 30px;
+    }
+    .content {
+        width: 90%;
+    }
+    .buttonUp {
+        right: 10px;
+        font-size: 16px;
+    }
+    .buttonDown {
+        right: 10px;
+        font-size: 16px;
+    }
+    .title {
+        font-size: 13px;
+        padding: 8px 0 8px 10px;
+    }
+    .contentText {
+        width: 85%;
+        font-size: 0.7em;
+        padding: 5px 0;
+        text-align: start;
+    }
+}

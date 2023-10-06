@@ -18,3 +18,16 @@
     font-weight: 500;
     font-size: 48px;
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 111px;
+        margin: 0 20px;
+        border-radius: 10px;
+    }
+    .title {
+        width: 78%;
+        font-size: 24px;
+        text-align: start;
+    }
+}

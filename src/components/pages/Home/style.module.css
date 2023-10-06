@@ -7,3 +7,14 @@
     margin: 20px 50px;
     border-radius: 25px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .containerLocation {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: auto;
+        background-color: unset;
+        gap: 20px;
+    }
+}

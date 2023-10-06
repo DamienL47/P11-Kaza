@@ -18,3 +18,20 @@
     font-size: 24px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .logo {  
+        padding-top: 0;
+    }
+    .copyright {
+        width: 120px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    
+}

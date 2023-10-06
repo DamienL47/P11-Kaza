@@ -9,7 +9,14 @@
     position: relative;
     font-size: 30px;
     margin-right: 10px;
-    color: gray;
+    color: lightgrey;
     border: none;
   }
-  
+  @media screen and (max-width: 768px) {
+    .star {
+        font-size: 18px;
+    }
+    .starEmpty {
+        font-size: 18px;
+    }
+  }

@@ -10,7 +10,10 @@ export function Error404() {
       <Header />
       <div>
         <h1 className={s.title}>404</h1>
-        <p className={s.text}>Oups! La page que vous demandez n'existe pas.</p>
+        <p className={s.text}>
+          <span className={s.line}>Oups! La page que</span> vous demandez
+          n'existe pas.
+        </p>
         <Link to="/" className={s.link}>
           Retourner sur la page d'accueil
         </Link>

@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className={s.header}>
       <div className={s.container}>
-        <div className={s.logo}>
-          <img src={logo} alt="logo" />
+        <div>
+          <img className={s.logo} src={logo} alt="logo" />
         </div>
         <nav>
           <ul className={s.menu}>

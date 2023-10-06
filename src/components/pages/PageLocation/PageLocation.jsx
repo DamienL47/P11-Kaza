@@ -35,6 +35,9 @@ export function PageLocation() {
 
   const styleCollapse = {
     width: "92%",
+    "@media screen and (max-width: 768px)": {
+      width: "100%",
+    },
   };
 
   return (
@@ -42,20 +45,10 @@ export function PageLocation() {
       <Header />
       <SlideShow images={pictures} />
       <div className={s.container}>
-        <div className={s.containerInfos}>
-          <div className={s.containerHost}>
+        <div className={s.blocContainers}>
+          <div className={s.containerInfos}>
             <h1 className={s.title}>{accommodation.title}</h1>
-            <div className={s.host}>
-              <p className={s.hostName}>{accommodation.host.name}</p>
-              <img
-                className={s.imgHost}
-                src={accommodation.host.picture}
-                alt=""
-              />
-            </div>
-          </div>
-          <p className={s.location}>{accommodation.location}</p>
-          <div className={s.rating}>
+            <p className={s.location}>{accommodation.location}</p>
             <p className={s.tags}>
               {accommodation.tags.map((tag) => {
                 return (
@@ -65,6 +58,16 @@ export function PageLocation() {
                 );
               })}
             </p>
+          </div>
+          <div className={s.containerHost}>
+            <div className={s.host}>
+              <p className={s.hostName}>{accommodation.host.name}</p>
+              <img
+                className={s.imgHost}
+                src={accommodation.host.picture}
+                alt={accommodation.host.name}
+              />
+            </div>
             <div className={s.placeRating}>
               <Rating rating={accommodation.rating} />
             </div>
@@ -72,12 +75,12 @@ export function PageLocation() {
         </div>
         <div className={s.containerCollapse}>
           <div className={s.collapse}>
-            <Collapse className={styleCollapse} title="Description">
+            <Collapse style={styleCollapse} title="Description">
               {accommodation.description}
             </Collapse>
           </div>
           <div className={s.collapse}>
-            <Collapse title="Equipements" className={styleCollapse}>
+            <Collapse title="Equipements" style={styleCollapse}>
               {displayEquipments()}
             </Collapse>
           </div>
