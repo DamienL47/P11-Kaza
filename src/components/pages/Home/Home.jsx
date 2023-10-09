@@ -8,7 +8,7 @@ import { Footer } from "./Footer/Footer";
 import banner from "../../../assets/images/Image_source_1.png";
 
 export function Home() {
-  const selected = data.slice(0, 6);
+  const selected = data.filter((accomodation) => accomodation);
   return (
     <>
       <Header image={logo} />

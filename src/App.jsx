@@ -7,7 +7,7 @@ import data from "./data/logements.json";
 
 export function App() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,6 +20,6 @@ export function App() {
         ))}
         <Route path="*" element={<Error404 />} />
       </Routes>
-    </div>
+    </>
   );
 }
