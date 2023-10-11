@@ -3,30 +3,30 @@ import s from "./style.module.css";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
 
-// Définition du composant SlideShow qui prend un tableau d'images en tant que prop
+// Définition du composant SlideShow qui prend un tableau d'images en tant que props
 export function SlideShow({ images = [] }) {
-  // État pour suivre l'index de la diapositive actuelle
+  // hook d'état pour suivre l'index de la diapositive actuelle
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Fonction pour passer à la diapositive précédente
+  // Fonction pour passer à l'image précédente
   const handlePrevSlide = () => {
-    // Met à jour l'index de la diapositive actuelle en fonction du nombre d'images
+    // Met à jour l'index de l'image actuelle en fonction du nombre d'images
     setCurrentSlide(
       (prevSlide) => (prevSlide - 1 + images.length) % images.length
     );
   };
 
-  // Fonction pour passer à la diapositive suivante
+  // Fonction pour passer à l'image suivante
   const handleNextSlide = () => {
-    // Met à jour l'index de la diapositive actuelle en fonction du nombre d'images
+    // Met à jour l'index de l'image actuelle en fonction du nombre d'images
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
   };
 
-  // Rendu du composant diaporama
+  // Rendu du composant SlideShow
   return (
     <div className={s.slideShow}>
       <div className={s.slideShowInner}>
-        {/* Itération à travers le tableau d'images pour rendre chaque diapositive */}
+        {/* Itération à travers le tableau d'images pour chaque image */}
         {images.map((image, index) => (
           <div
             key={index}
@@ -35,17 +35,17 @@ export function SlideShow({ images = [] }) {
               index === currentSlide ? s.active : ""
             }`}
           >
-            {/* Bouton flèche gauche pour naviguer vers la diapositive précédente */}
+            {/* Bouton flèche gauche pour naviguer vers l'image précédente */}
             <ChevronLeft className={s.buttonLeft} onClick={handlePrevSlide} />
 
-            {/* Élément image pour la diapositive actuelle */}
+            {/* Élément image pour l'image actuelle */}
             <img
               className={s.imageSlide}
               src={image}
               alt={`diapositive ${index}`}
             />
 
-            {/* Bouton flèche droite pour naviguer vers la diapositive suivante */}
+            {/* Bouton flèche droite pour naviguer vers l'image suivante */}
             <ChevronRight className={s.buttonRight} onClick={handleNextSlide} />
           </div>
         ))}

@@ -18,7 +18,9 @@ export function PageLocation() {
     return <Error404 />;
   }
 
+  // Récupérations des images des locations
   const pictures = accommodation.pictures;
+
   const listEquipements = accommodation.equipments;
 
   const displayEquipments = () => {
