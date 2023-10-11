@@ -36,7 +36,9 @@ export function SlideShow({ images = [] }) {
             }`}
           >
             {/* Bouton flèche gauche pour naviguer vers l'image précédente */}
-            <ChevronLeft className={s.buttonLeft} onClick={handlePrevSlide} />
+            {images.length > 1 && (
+              <ChevronLeft className={s.buttonLeft} onClick={handlePrevSlide} />
+            )}
 
             {/* Élément image pour l'image actuelle */}
             <img
@@ -46,7 +48,12 @@ export function SlideShow({ images = [] }) {
             />
 
             {/* Bouton flèche droite pour naviguer vers l'image suivante */}
-            <ChevronRight className={s.buttonRight} onClick={handleNextSlide} />
+            {images.length > 1 && (
+              <ChevronRight
+                className={s.buttonRight}
+                onClick={handleNextSlide}
+              />
+            )}
           </div>
         ))}
       </div>

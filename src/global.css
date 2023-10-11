@@ -3,8 +3,8 @@
     src: url('./assets/font/Montserrat-VariableFont_wght.ttf');
 }
 body {
-    max-width: 1400px; 
-    margin: auto;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 * {

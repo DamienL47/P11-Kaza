@@ -1,11 +1,11 @@
 import s from "./style.module.css";
-import data from "../../../data/logements.json";
+import data from "../../data/logements.json";
 import { Header } from "../Home/Header/Header";
 import { Footer } from "../Home/Footer/Footer";
-import { SlideShow } from "../../SlideShow/SlideShow";
-import { Collapse } from "../../Collapse/Collapse";
+import { SlideShow } from "../../components/SlideShow/SlideShow";
+import { Collapse } from "../../components/Collapse/Collapse";
 import { useParams, useNavigate } from "react-router-dom";
-import { Rating } from "../../Rating/Rating";
+import { Rating } from "../../components/Rating/Rating";
 import { Error404 } from "../Error404/Error404";
 
 export function PageLocation() {

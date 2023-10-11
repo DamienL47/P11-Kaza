@@ -1,8 +1,8 @@
 import s from "./style.module.css";
 import { Header } from "../Home/Header/Header";
 import { Banner } from "../Home/Main/Banner/Banner";
-import banner from "../../../assets/images/Image_source_2.png";
-import { Collapse } from "../../Collapse/Collapse";
+import banner from "../../assets/images/Image_source_2.png";
+import { Collapse } from "../../components/Collapse/Collapse";
 import { Footer } from "../Home/Footer/Footer";
 
 export function About() {

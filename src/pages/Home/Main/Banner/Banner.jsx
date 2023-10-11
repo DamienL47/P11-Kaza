@@ -1,5 +1,5 @@
 import s from "./style.module.css";
-import banner from "../../../../../assets/images/Image_source_1.png";
+import banner from "../../../../assets/images/Image_source_1.png";
 
 export function Banner({ image = null, text = null }) {
   return (

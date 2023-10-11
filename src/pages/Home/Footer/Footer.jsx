@@ -1,5 +1,5 @@
 import s from "./style.module.css";
-import logoBlanc from "../../../../assets/images/logoBlanc.png";
+import logoBlanc from "../../../assets/images/logoBlanc.png";
 
 export function Footer() {
   return (

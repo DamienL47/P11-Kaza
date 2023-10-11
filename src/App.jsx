@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./components/pages/Home/Home";
-import { Error404 } from "./components/pages/Error404/Error404";
-import { About } from "./components/pages/About/About";
-import { PageLocation } from "./components/pages/PageLocation/PageLocation";
+import { Home } from "./pages/Home/Home";
+import { Error404 } from "./pages/Error404/Error404";
+import { About } from "./pages/About/About";
+import { PageLocation } from "./pages/PageLocation/PageLocation";
 import data from "./data/logements.json";
 
 export function App() {
