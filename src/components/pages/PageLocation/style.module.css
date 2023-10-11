@@ -52,7 +52,8 @@
 .tags {
     margin-left: 50px;
     margin-top: 5px;
-    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
 }
 .tag {
     background-color: #FF6060;
@@ -144,5 +145,6 @@
         margin-top: 0;
         flex-direction: column;
         margin-bottom: 0;
+        padding: 0;
     }
 }
